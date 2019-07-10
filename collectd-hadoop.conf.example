@@ -1,0 +1,16 @@
+<LoadPlugin "python">
+    Globals true
+</LoadPlugin>
+
+<Plugin "python">
+    ModulePath "/usr/local/lib/collectd/python-plugins"
+    LogTraces true
+
+    Import "hadoop_plugin"
+
+    <Module "hadoop_plugin">
+        Verbose true
+        Version "1.0"
+        Ports "8088" "50070" "50090" "19888" "8042" "50075"
+    </Module>
+</Plugin>
