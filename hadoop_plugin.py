@@ -28,7 +28,9 @@ METRICS = {
     'Hadoop:service=NameNode,name=NameNodeInfo': {
         'attributes': {},
         'embedded_attributes': {
-            'LiveNodes': '*'
+            'LiveNodes': '*',
+            'DeadNodes': '*',
+            'DecomNodes': '*'
         }
     },
     'Hadoop:service=NameNode,name=StartupProgress': {},
